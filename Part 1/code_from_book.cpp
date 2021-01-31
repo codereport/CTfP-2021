@@ -9,3 +9,9 @@ C g_after_f(A a) {
 }
 
 template<class T> T id(T x) { return x; }
+
+// Godbolt: https://godbolt.org/z/Yzf4Wh
+
+std::reverse(v.begin(), v.end());
+std::transform(v.begin(), v.end(), v.begin(), 
+    [](auto e) { return e + 1; });
