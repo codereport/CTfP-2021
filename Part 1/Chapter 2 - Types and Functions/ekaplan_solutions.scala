@@ -127,13 +127,13 @@ object ekaplan_solutions {
    *
    * 4
    */
-  def boolId(x: Bool): Bool = x
+  def boolId(x: Boolean): Boolean = x
 
-  def boolNegate(x: Bool): Bool = !x
+  def boolNegate(x: Boolean): Boolean = !x
 
-  def boolTrue(x: Bool): Bool = true
+  def boolTrue(x: Boolean): Boolean = true
 
-  def boolFalse(x: Bool): Bool = false
+  def boolFalse(x: Boolean): Boolean = false
 
   /**
    * 2.7.6
