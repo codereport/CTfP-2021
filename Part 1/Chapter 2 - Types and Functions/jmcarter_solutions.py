@@ -51,12 +51,13 @@ def test_memoized_random_with_seed():
 
 
 #  2.7.5 : Implement all functions from Bool to Bool
-def test_all_bool_functions():
-    bool_identity = lambda x: x
-    bool_inverse = lambda x: not x
-    bool_true = lambda x: True
-    bool_false = lambda x: False
+bool_identity = lambda x: x
+bool_inverse = lambda x: not x
+bool_true = lambda x: True
+bool_false = lambda x: False
 
+
+def test_all_bool_functions():
     assert bool_identity(True) is True
     assert bool_identity(False) is False
 
@@ -90,19 +91,11 @@ def test_all_bool_functions():
 
 def test_void_unit_bool_category():
     # def absurd(void): return any
-    iden = lambda x: x
-
-    def true(x):
-        return True
-
-    def false(x):
-        return False
-
-    def NOT(x: bool):
-        return not x
-
-    def unit(x):
-        return None
+    id = bool_identity
+    true = bool_true
+    false = bool_false
+    NOT = bool_inverse
+    unit = lambda x: None
 
     assert true(None) is True
     assert false(None) is False
