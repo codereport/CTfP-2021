@@ -1,5 +1,4 @@
 object ekaplan_solutions extends App {
-
   // 1.4.1
   def id[T](x: T): T = x
 
@@ -8,7 +7,7 @@ object ekaplan_solutions extends App {
     (x: A) => g(f(x)) // or just `f andThen g`
 
   // 1.4.3
-  def testComposition(): Unit = {
+  def testIdentityComposition(): Unit = {
     import Numeric.Implicits._
 
     def doubleString[T: Numeric](x: T): String = (x + x).toString
@@ -19,6 +18,4 @@ object ekaplan_solutions extends App {
     assert(doubleString[Int](1) == doubleIdLeft(1), "Left identity does not hold")
     assert(doubleString[Int](1) == doubleIdRight(1), "Right identity does not hold")
   }
-
-  testComposition()
 }
