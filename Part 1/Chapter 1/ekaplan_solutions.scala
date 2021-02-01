@@ -1,4 +1,4 @@
-object ekaplan_solutions extends App {
+object ekaplan_solutions {
   /**
    * 1.4.1
    * Implement, as best as you can, the identity function in
