@@ -16,8 +16,8 @@ object ekaplan_solutions extends App {
     val doubleIdLeft = compose(id[Int], doubleString[Int])
     val doubleIdRight = compose(doubleString[Int], id[String])
 
-    assert(doubleString[Int](1) == doubleIdLeft(1))
-    assert(doubleString[Int](1) == doubleIdRight(1))
+    assert(doubleString[Int](1) == doubleIdLeft(1), "Left identity does not hold")
+    assert(doubleString[Int](1) == doubleIdRight(1), "Right identity does not hold")
   }
 
   testComposition()
