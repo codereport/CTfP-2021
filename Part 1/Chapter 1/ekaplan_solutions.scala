@@ -58,7 +58,7 @@ object ekaplan_solutions {
    *
    * 1. All nodes must have an edge incident to itself
    * 2. For all nodes A, B, and C for which there exists a directed
-   *    edge from A to B and from B to C, there must exist a directed
-   *    edge from A to C.
+   * edge from A to B and from B to C, there must exist a directed
+   * edge from A to C.
    */
 }
