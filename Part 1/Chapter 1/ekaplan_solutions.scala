@@ -24,13 +24,14 @@ object ekaplan_solutions {
   def testIdentityComposition(): Unit = {
     import Numeric.Implicits._
 
+    // Straw man function from Numeric types to String type
     def doubleString[T: Numeric](x: T): String = (x + x).toString
 
-    val doubleIdLeft = compose(id[Int], doubleString[Int])
-    val doubleIdRight = compose(doubleString[Int], id[String])
+    val doubleStringLeftId = compose(id[Int], doubleString[Int])
+    val doubleStringRightId = compose(doubleString[Int], id[String])
 
-    assert(doubleString[Int](1) == doubleIdLeft(1), "Left identity does not hold")
-    assert(doubleString[Int](1) == doubleIdRight(1), "Right identity does not hold")
+    assert(doubleString[Int](1) == doubleStringLeftId(1), "Left identity does not hold")
+    assert(doubleString[Int](1) == doubleStringRightId(1), "Right identity does not hold")
   }
 
   /**
