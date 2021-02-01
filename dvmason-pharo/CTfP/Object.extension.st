@@ -6,6 +6,11 @@ Object >> <> aBlock [
 ]
 
 { #category : #'*CTfP' }
+Object >> id [
+	^ [: x | x ]
+]
+
+{ #category : #'*CTfP' }
 Object >> verifyIdComposable: aBlock [
 	| simple composed |
 	simple := aBlock value: self.
