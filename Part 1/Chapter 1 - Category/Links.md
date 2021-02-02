@@ -6,6 +6,7 @@
 
 #### From Chat:
 * [The Humble Programmer](https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html)
+* [Programming as a discipline of mathematical nature](https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD361.html)
 * [`auto id(auto x)` in C++20](https://godbolt.org/z/nEd1T7)
 * [Lambdas in different languages](https://brevzin.github.io/c++/2020/06/18/lambda-lambda-lambda/)
 * [Stepanov Programming Converstaions](https://www.youtube.com/playlist?list=PLHxtyCq_WDLXFAEA-lYoRNQIezL_vaSX-)
