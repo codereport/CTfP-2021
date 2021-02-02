@@ -13,11 +13,7 @@ object Main extends App {
     /** 
      * Q2: Composition function
      */     
-
-    // This is a bit noob-ish. Ideally f should take variadic arguments
-    // compose 
-    def compose[A, B, C] (g : B => C, f: A => B, args : A*) : C = g(f(args))
-    // def compose[A, B, C] (g : B => C, f: Seq[Seq[A]] => B, args : A*) : C = g(f(args : _*))
+    def compose[A, B, C](a: A)(f: A => B)(g: B => C): C = g(f(a))
 
     /** 
      * Q3: Test composition respects identity
@@ -25,11 +21,11 @@ object Main extends App {
     def test_composition_identity () = {
         def addOne (x: Int) : Int = x + 1
         def sq (x : Int) : Int = x * x
-        assert(compose(sq, addOne, 5) == 36)
-
-        assert(id(compose(sq, addOne, 2)) == compose(sq, addOne, id(2)))
-        // this errs out due to a mismatch in types but is probably what the question asked
-        // assert(id(compose(sq, addOne, 2)) == compose(id(sq), id(addOne), 2)) // and permutations like these.
+        assert(compose(5)(addOne)(sq) == 36)
+        assert(id(compose(5)(addOne)(sq)) == compose(id(5))(addOne)(sq))
+        // this errs out but is probably what the question asked for -
+        // perhaps the right way to do it is to apply f to a, then g to f?
+        // assert(id(compose(5)(addOne)(sq)) == compose(id(5))(id(addOne))(id(sq)))
 
         println("Test: Composition respects identity - PASSED")
     }
