@@ -2,14 +2,13 @@
 function memoize(f)
     cache = Dict()
     function mem_f(x)
-        if haskey(cache, x)
-            return cache[x]
-        else
-            cache[x] = f(x)
-            return cache[x]
-        end
+        haskey(cache, x) ? cache[x] : cache[x] = f(x)
     end
-    return mem_f
+end
+
+function fib(x)
+    x < 2 && return 1
+    fib(x - 1) + fib(x - 2)
 end
 ### 2
 rr = memoize(rand)
