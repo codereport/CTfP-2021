@@ -1,5 +1,5 @@
 
-// Chapter 1
+// Chapter 1: Category
 
 B f(A a);
 C g(B b);
@@ -15,3 +15,22 @@ template<class T> T id(T x) { return x; }
 std::reverse(v.begin(), v.end());
 std::transform(v.begin(), v.end(), v.begin(), 
     [](auto e) { return e + 1; });
+
+// Chapter 2: Types & Functions
+
+// from book
+int fact ( int n) {
+    int result = 1;
+    for (int i = 2; i <= n; ++ i)
+        result *= i;
+    return result;
+}
+
+// C++20: https://www.godbolt.org/z/xETPfo
+using namespace std::ranges;
+
+auto fact(int n) -> int {
+    auto vals = views::iota(1, n);
+    return std::reduce(begin(vals), end(vals), 1, std::multiplies{});
+}
+
