@@ -34,3 +34,10 @@ auto fact(int n) -> int {
     return std::reduce(begin(vals), end(vals), 1, std::multiplies{});
 }
 
+// C++23 potentially
+
+using namespace std::ranges;
+
+auto fact(int n) -> int {
+    return views::iota(1, n) | fold(1, std::multiplies{});
+}
