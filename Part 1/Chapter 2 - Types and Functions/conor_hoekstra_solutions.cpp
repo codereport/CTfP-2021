@@ -9,9 +9,7 @@ auto memoize(auto fn) {
     return [done = std::map<int,int>{}, fn](auto n) mutable  {
         if (auto it = done.find(n); it != done.end())
             return it->second;
-        auto const val = fn(n);
-        done[n] = val;
-        return val;
+        return done[n] = fn(n);
     };
 }
 
