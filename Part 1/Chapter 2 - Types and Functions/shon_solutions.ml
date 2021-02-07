@@ -19,9 +19,9 @@ let memo f =
     match Hashtbl.find_opt ht x with
     | Some y -> y
     | None   ->
-      let y = f x in
-      Hashtbl.add ht x y;
-      y
+        let y = f x in
+        Hashtbl.add ht x y;
+        y
 
 let%expect_test "memo memoizes (morally) pure functions" =
   let f x =
@@ -51,8 +51,8 @@ let%test "memoization of pure functions" =
         ~name:"memoized function are equal to the function"
         (pair (fun1 Observable.string int) string)
         (fun (f, x) ->
-           let memo_f = memo (Fn.apply f) in
-           Fn.apply f x = memo_f x)
+          let memo_f = memo (Fn.apply f) in
+          Fn.apply f x = memo_f x)
     ]
 
 (** Exercise 2
@@ -67,16 +67,16 @@ let%test "memoization of non-deterministic functions" =
         ~name:"Random.int gives different results on repeated calls"
         (int_range 100 10000)
         (fun bound ->
-           assume (bound > 0);
-           Random.int bound <> Random.int bound)
+          assume (bound > 0);
+          Random.int bound <> Random.int bound)
     ; Test.make
         ~name:
           "memoized Random.int doesn't give different results on repeated \
            calls "
         (int_range 100 10000)
         (fun bound ->
-           let memo_rand = memo Random.int in
-           not (memo_rand bound <> memo_rand bound))
+          let memo_rand = memo Random.int in
+          not (memo_rand bound <> memo_rand bound))
     ]
 
 (** Exercise 3
@@ -94,9 +94,9 @@ let%test _ =
         ~name:"init_rand is equal to its memoized version"
         int
         (fun seed ->
-           let memo_init_rand = memo init_rand in
-           init_rand seed = memo_init_rand seed
-           && init_rand seed = memo_init_rand seed)
+          let memo_init_rand = memo init_rand in
+          init_rand seed = memo_init_rand seed
+          && init_rand seed = memo_init_rand seed)
     ]
 
 (** Exercise 4
@@ -209,19 +209,20 @@ module Ex_6 = struct
     let unit = Unit.unit
   end
 
-  (** {4 Morphisms from bottom} *)
-  module Bottom : sig
+  (** {4 Morphisms from Void} *)
+  module Void : sig
     include Obj.ToBool
   end = struct
     type t
-    (** We provide no constructors for this type, making it unreachable. *)
+    (** We provide no constructors for this type, making it unreachable.
+        Is this an accurate representation? *)
 
     let id = id
 
-    let unit = Unit.unit
+    let unit _ = raise (Failure "undefined")
 
-    let true_ = Unit.true_ % unit
+    let true_ _ = raise (Failure "undefined")
 
-    let false_ = Unit.false_ % unit
+    let false_ _ = raise (Failure "undefined")
   end
 end
