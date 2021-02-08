@@ -6,8 +6,7 @@ fn id_owned<T>(thing: T) -> T {
 }
 
 #[allow(dead_code)]
-fn id_referenced<T: Clone>(thing: &T) -> T {
-    thing.clone()
+fn id_referenced<T>(thing: &T) -> &T {
 }
 
 // 2.
