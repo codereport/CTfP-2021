@@ -9,6 +9,10 @@ pub struct MemoFunc<A, R> {
     func: fn(&mut MemoFunc<A, R>, A) -> R,
 }
 
+trait Call<A, R> {
+    fn call(&mut self, arg: A) -> R;
+}
+
 impl<A, R> MemoFunc<A, R>
 where
     A: Eq + Hash + Clone,
@@ -20,8 +24,14 @@ where
             func,
         }
     }
+}
 
-    pub fn call(&mut self, arg: A) -> R {
+impl<A, R> Call<A, R> for MemoFunc<A, R>
+where
+    A: Clone + Hash + Eq,
+    R: Clone,
+{
+    fn call(&mut self, arg: A) -> R {
         let func = self.func.clone();
         if let Some(ret) = self.memo.get(&arg) {
             ret.clone()
@@ -35,8 +45,8 @@ where
 
 pub struct Plain<A, R>(fn(&mut Plain<A, R>, A) -> R);
 
-impl<A, R> Plain<A, R> {
-    pub fn call(&mut self, arg: A) -> R {
+impl<A, R> Call<A, R> for Plain<A, R> {
+    fn call(&mut self, arg: A) -> R {
         (self.0)(self, arg)
     }
 }
@@ -47,11 +57,11 @@ mod test_1 {
 
     #[test]
     fn test_fib() {
-        fn fib<M>(memo_func: &mut M, n: u64) -> u64 {
+        fn fib<M: Call<u64, u64>>(memo_func: &mut M, n: u64) -> u64 {
             match n {
                 0 => 0,
                 1 => 1,
-                n => fib(memo_func, n - 1) + fib(memo_func, n - 1),
+                n => memo_func.call(n - 1) + memo_func.call(n - 1),
             }
         }
 
