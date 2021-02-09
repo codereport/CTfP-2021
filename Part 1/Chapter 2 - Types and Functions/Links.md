@@ -1,43 +1,40 @@
 ### Links
 
-* http://hackage.haskell.org/package/base-4.14.1.0/docs/Unsafe-Coerce.html
-* https://en.wikipedia.org/wiki/Cedilla
-* https://en.wikipedia.org/wiki/Ogonek
-* https://www.youtube.com/watch?v=IOiZatlZtGU
-* https://doc.rust-lang.org/beta/book/index.html
-* https://en.wikipedia.org/wiki/Polymorphism_(computer_science)#Ad_hoc_polymorphism
-* https://ict.senecacollege.ca/~oop244/pages.141/content/adhoc_p.html
-* https://dl.acm.org/doi/10.1145/6041.6042
-* https://eli.thegreenplace.net/2016/the-expression-problem-and-its-solutions/
-* https://www.ioccc.org/years.html#1996_august
-* https://clash-lang.org/
-* https://qbaylogic.com/
-* https://rd.springer.com/chapter/10.1007/978-3-319-26408-0_10
-* https://hackage.haskell.org/package/uglymemo-0.1.0.1/docs/src/Data-MemoUgly.html
-* https://jeremykun.com/2013/05/15/properties-of-morphisms/
-* https://www.mathsisfun.com/sets/domain-range-codomain.html#:~:text=The%20set%20%22A%22%20is%20the%20Domain%2C&text=The%20set%20%22B%22%20is%20the%20Codomain%2C&text=And%20the%20set%20of%20elements,Range%2C%20also%20called%20the%20Image
-* https://www.youtube.com/watch?v=TXBW2wp1sDw
-* https://github.com/codereport/jsource
-* https://math.stackexchange.com/questions/97390/function-theory-codomain-and-image-difference-between-them
-* https://hackage.haskell.org/package/monad-memo-0.5.3/docs/Control-Monad-Memo.html
-* https://crates.io/index.html
-* http://www.berniepope.id.au/assets/files/open_recursion.pdf
-* https://en.wikipedia.org/wiki/To_Mock_a_Mockingbird
-* http://hackage.haskell.org/package/void-0.5.10/docs/Data-Void.html#v:absurd
-* https://wiki.haskell.org/Hask
-* http://milessabin.com/blog/2011/06/09/scala-union-types-curry-howard/
-* https://en.wiktionary.org/wiki/%E6%A5%BD
-* https://github.com/doonay21/Peridot
-* https://discord.com/channels/768925015474176010/768925015474176012
-* https://mlp.fandom.com/wiki/Discord
-* https://www.goodreads.com/book/show/2047855.Category_Theory
-* https://youtu.be/MvQxNm5gn8g
-* https://www.youtube.com/watch?v=IOiZatlZtGU
-* https://en.wikipedia.org/wiki/Zero_to_the_power_of_zero
-* https://www.youtube.com/watch?v=BRRolKTlF6Q
-* https://youtu.be/BRRolKTlF6Q
-* http://www.ioccc.org/years.html#1985_august
-* http://www.ioccc.org/years.html#1996_august
-* https://en.wikipedia.org/wiki/Raku_(programming_language)
-* https://meta.wikimedia.org/wiki/Cunningham%27s_Law#:~:text=Cunningham's%20Law%20states%20%22the%20best,Cunningham%2C%20father%20of%20the%20wiki.
-* https://medium.com/swlh/on-memoization-291fd1dd924
+* [Unsafe.Coerce](http://hackage.haskell.org/package/base-4.14.1.0/docs/Unsafe-Coerce.html)
+* [Cedilla](https://en.wikipedia.org/wiki/Cedilla)
+* [Ogonek](https://en.wikipedia.org/wiki/Ogonek)
+* ["Propositions as Types" by Philip Wadler](https://www.youtube.com/watch?v=IOiZatlZtGU)
+* [The Rust Book](https://doc.rust-lang.org/beta/book/index.html)
+* [Ad_hoc_polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)#Ad_hoc_polymorphism)
+* [Overview of Polymorphism](https://ict.senecacollege.ca/~oop244/pages.141/content/adhoc_p.html)
+* [On understanding types, data abstraction, and polymorphism](https://dl.acm.org/doi/10.1145/6041.6042)
+* [The Expression Problem and its solutions](https://eli.thegreenplace.net/2016/the-expression-problem-and-its-solutions/)
+* [Obfuscated C Contest 1996](https://www.ioccc.org/years.html#1996_august)
+* [Obfuscated C Contest 1985](https://www.ioccc.org/years.html#1985_august)
+* [Clash Programming Language](https://clash-lang.org/)
+* [QBay Logic (creators of Clash)](https://qbaylogic.com/)
+* [LegUp High-Level Synthesis](https://rd.springer.com/chapter/10.1007/978-3-319-26408-0_10)
+* [Data.MemoUgly](https://hackage.haskell.org/package/uglymemo-0.1.0.1/docs/src/Data-MemoUgly.html)
+* [Properties of Morphisms](https://jeremykun.com/2013/05/15/properties-of-morphisms/)
+* [Domain, Range and Codomain](https://www.mathsisfun.com/sets/domain-range-codomain.html#:~:text=The%20set%20%22A%22%20is%20the%20Domain%2C&text=The%20set%20%22B%22%20is%20the%20Codomain%2C&text=And%20the%20set%20of%20elements,Range%2C%20also%20called%20the%20Image)
+* [J: From C to C++20 Livestreams](https://www.youtube.com/watch?v=TXBW2wp1sDw)
+* [J Source Code](https://github.com/codereport/jsource)
+* [Function theory: codomain and image, difference between them](https://math.stackexchange.com/questions/97390/function-theory-codomain-and-image-difference-between-them)
+* [Control.Monad.Memo](https://hackage.haskell.org/package/monad-memo-0.5.3/docs/Control-Monad-Memo.html)
+* [Rust Crates.io](https://crates.io/index.html)
+* [Open recursion and fixed points](http://www.berniepope.id.au/assets/files/open_recursion.pdf)
+* [To Mock a Mockingbird](https://en.wikipedia.org/wiki/To_Mock_a_Mockingbird)
+* [Data.Void Absurd](http://hackage.haskell.org/package/void-0.5.10/docs/Data-Void.html#v:absurd)
+* [Hask](https://wiki.haskell.org/Hask)
+* [Unboxed union types in Scala via the Curry-Howard isomorphism](http://milessabin.com/blog/2011/06/09/scala-union-types-curry-howard/)
+* [https://en.wiktionary.org/wiki/%E6%A5%BD](https://en.wiktionary.org/wiki/%E6%A5%BD)
+* [Peridot Programming Language](https://github.com/doonay21/Peridot)
+* [r/ProgrammingLanguages Meetup](https://discord.com/channels/768925015474176010/768925015474176012)
+* [My Little Pony Friendship is Magic Wiki](https://mlp.fandom.com/wiki/Discord)
+* [Category Theory by Steve Awodey](https://www.goodreads.com/book/show/2047855.Category_Theory)
+* [A Pragmatic Introduction to Category Theory - Daniela Sfregola](https://youtu.be/MvQxNm5gn8g)
+* [Zero to the power of zero](https://en.wikipedia.org/wiki/Zero_to_the_power_of_zero)
+* [Problems with Zero - Numberphile](https://www.youtube.com/watch?v=BRRolKTlF6Q)
+* [Raku Programming Language](https://en.wikipedia.org/wiki/Raku_(programming_language))
+* [Cunningham's Law](https://meta.wikimedia.org/wiki/Cunningham%27s_Law#:~:text=Cunningham's%20Law%20states%20%22the%20best,Cunningham%2C%20father%20of%20the%20wiki)
+* [On memoization article](https://medium.com/swlh/on-memoization-291fd1dd924)
