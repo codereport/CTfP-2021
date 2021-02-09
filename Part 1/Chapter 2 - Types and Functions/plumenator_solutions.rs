@@ -80,7 +80,6 @@ mod test_1 {
         Plain(fib).call(25);
         let plain_elapsed = now.elapsed();
 
-        // This actually fails right now :-(
         assert!(memo_elapsed < plain_elapsed);
     }
 }
