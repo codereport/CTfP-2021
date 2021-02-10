@@ -35,10 +35,19 @@ This is a partial order. Not total order because some types have no relation. pa
 There are 2 morphisms in this monoid.
 + &&1 (and with True), also known as the Identity morphism
 + &&0 (and with False)
-+ The composition of &&1 and &&0 is &&0
+
+The composition table:
++ &&1 . &&0 = &&0
++ &&0 . &&0 = &&0
++ &&1 . &&1 = &&1  
 
 ### Q.5 Represent addition modulo 3 as a monoid category.
 There are 3 morphisms in this monoid.
 + +0 (adding by 0), also known as the Identity morphism for this object
-+ +1 (adding by 1), which takes 0 into 1, 1 into 2 and 2 into 0 (0 -> 1 -> 2 -> 0), which is equivalent to positive cycling
++ +1 (adding by 1), which converts (0 -> 1 -> 2 -> 0), which is equivalent to positive cycling
 + +2 (adding by 2), which converts (0 -> 2 -> 1 -> 0), which is equivalent to negative cycling
+
+The composition table:
++ +1 . +1 = +2
++ +2 . +2 = +1
++ +1 . +2 = +0
