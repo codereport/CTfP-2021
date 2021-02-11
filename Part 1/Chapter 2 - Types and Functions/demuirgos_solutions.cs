@@ -24,8 +24,7 @@ Console.WriteLine(memoizedFactorial(23));
 
 // Ex2 : Try to memoize a function from your standard library that you
 //       normally use to produce random numbers. Does it work?
-//       No, same input will produce same output and since unit is 1 value then we'll always 
-//       get the same output 
+//       No, since same input will give the same output over and over again 
 int randomize(int i) {
     var r = new System.Random();
     return r.Next(i);
@@ -38,7 +37,7 @@ Func<int,int> MemoizedRandomize =  memoize<int,int>(randomize);
 //       Implement a function that takes a seed, calls the random number
 //       generator with that seed, and returns the result. Memoize that
 //       function. Does it work?
-//       Yes in a way, same seed will produce same sequence 
+//       Yes in a way, same seed will produce same number (since it create a mapping 1to1 from seed to result)
 //        
 
 int seededRandomize(int seed) {
