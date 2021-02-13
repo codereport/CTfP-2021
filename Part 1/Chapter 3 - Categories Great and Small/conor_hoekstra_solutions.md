@@ -25,7 +25,7 @@ b) Partial order
 
 **Question 4**
 
-Single object is the `Bool` Type. There are an infinite number of morphisms. There are two morphisms, `AND False` and `AND True`. When composed, you get:
+Single object is the `Bool` Type. There are two morphisms, `AND False` and `AND True`. When composed, you get:
 | A | B | A ∘ B |
 |:-:|:-:|:-:|
 |`AND True`|`AND True`|`AND True`|
