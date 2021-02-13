@@ -1,4 +1,5 @@
 **Question 1**
+![image](https://user-images.githubusercontent.com/36027403/107852858-f4accf80-6de0-11eb-9847-1c909f6df37b.png)
 
 **Question 2**
 
@@ -33,3 +34,4 @@ Single object is the `Bool` Type. There are an infinite number of morphisms. The
 |`AND False`|`AND False`|`AND False`|
 
 **Question 5**
+![image](https://user-images.githubusercontent.com/36027403/107852822-c9c27b80-6de0-11eb-9b69-d34eca6180e8.png)
