@@ -10,10 +10,18 @@ object Main extends App {
     def add (x: Int, y: Int) : Int = x + y
     println(id(add(3,4)) == add(id(3), id(4))) // true
 
+    // built-in identity
+    println(identity("Words"))
+
     /** 
      * Q2: Composition function
      */     
-    def compose[A, B, C](a: A)(f: A => B)(g: B => C): C = g(f(a))
+    def compose_impl[A, B, C](a: A)(f: A => B)(g: B => C): C = g(f(a))
+
+    // Credit to Martin, this implements the composition the right way
+    implicit class Function1WithComposeOperator[-T1, +R](f: T1 => R) {
+        def ∘[A](g: A => T1): A => R = f.compose(g)
+    }
 
     /** 
      * Q3: Test composition respects identity
@@ -21,8 +29,20 @@ object Main extends App {
     def test_composition_identity () = {
         def addOne (x: Int) : Int = x + 1
         def sq (x : Int) : Int = x * x
-        assert(compose(5)(addOne)(sq) == 36)
-        assert(id(compose(5)(addOne)(sq)) == compose(id(5))(addOne)(sq))
+        
+        // Credits to Martin, Scala has a built-in compose
+        // note that we specify not to apply the first function with _
+        val gComposeF = sq _ compose addOne
+        val fAndThenG = addOne _ andThen sq
+        assert(gComposeF(5) == 36)
+        assert(fAndThenG(5) == 36)
+
+
+
+        assert(id(compose_impl(5)(addOne)(sq)) == compose_impl(id(5))(addOne)(sq))
+
+        assert((sq _ ∘ addOne)(identity(5)) == identity((sq _ ∘ addOne)(5)))
+
         // this errs out but is probably what the question asked for -
         // perhaps the right way to do it is to apply f to a, then g to f?
         // assert(id(compose(5)(addOne)(sq)) == compose(id(5))(id(addOne))(id(sq)))
