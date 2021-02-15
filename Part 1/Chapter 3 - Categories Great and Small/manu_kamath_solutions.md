@@ -4,6 +4,8 @@
 
 ![Screenshot 2021-02-14 at 16 38 17](https://user-images.githubusercontent.com/26002127/107889799-fd85ca00-6ee2-11eb-8516-1e09f2eb8009.png)
 
+CORRECTION: Part d) should be (at least) 26! composition morphisms (I think?)
+
 ## Q2: Identify kind of order
 
 (a) (Preorder and) **Partial Order**; if A c B, then preorder condition is satisfied. Note, however, if A c B and B c A, that implies A = B so partial order is satisfied. (Partial order is also a special case of preorder; *all preorders are partial orders, but not vice-versa*. [This SO explains it quite well](https://math.stackexchange.com/a/3847120))
