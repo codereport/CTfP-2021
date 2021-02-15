@@ -9,7 +9,6 @@ object Solution {
   def identity[A](a: A): A = a
 
   // 1.d A graph with a single node and 26 arrows marked with the letters of the alphabet: a, b, c ... z.
-  // we generate a Category of morphisms, since all the ends match
   // object = Int
   // morphisms
   val a: Int => Int = ???
@@ -17,9 +16,8 @@ object Solution {
   val c: Int => Int = ???
   val betweenAandB: Int => Int = a andThen b
   val betweenBandC: Int => Int = b andThen c
-  val betweenAandC
-    : Int => Int = betweenAandB andThen betweenBandC // free construction
-  // ... infinite combinations
+  val betweenAandC: Int => Int = betweenAandB andThen betweenBandC // free construction
+  // ... infinite morphisms
 
   // 2. What kind of order is this?
   // 2.a A set of sets with the inclusion relation: 𝐴 is included in 𝐵 if every element of 𝐴 is also an element of 𝐵.
