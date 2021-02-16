@@ -1,0 +1,84 @@
+CATEGORY THEORY FOR PROGRAMMERS
+-------------------------------
+By Bartosz Milewski
+Compiled and edited by Igal Tabachnik
+
+Chapter 3
+Section 3.6 Challenges
+
+
+Most of my solutions follow from this theorem:
+
+    https://tinyurl.com/1ltnlvme
+
+
+1. Generate a free category from:
+
+                   Graph     Category
+
+(a) A graph                   ┌─────┐
+w/ 1 node                     │     │id
+and 0 edges           G       └🠖 G ─┘
+
+
+(b) A graph
+w/ 1 node          ┌─────┐    ┌─────┐
+and 1              │     │    │     │id
+directed           └🠖 G ─┘    └🠖 G ─┘
+edge
+
+(c) A graph                    ┌───┐
+w/ 2 nodes            A        ↳ A ┘idₐ
+and a single          🠗          🠗
+arrow between         B        ↱ B ┐
+them                           └───┘idᵇ
+
+(d) A graph      ↱↱↱↱ G ┬┐┐┐ ↱↱↱↱↱ G ┬┐┐┐┐
+w/ a single      │││└ a ┘│││ ││││└ a ┘││││
+node and 26      ││└─ b ─┘││ │││└─ b ─┘│││
+arrows marked    │└─ ... ─┘│ ││└─ ... ─┘││
+w/ the letters   └─── z ───┘ │└─── z ───┘│
+of the alphabet              └──── id ───┘
+
+
+2. What kind of order is this?
+
+(a) A set of sets with the inclusion relation: A is included in B if every
+    element of A is also an element of B.
+
+    TBD
+
+(b) C++ types with the following subtyping relation: T1 is a subtype of T2 if a
+    pointer to T1 can be passed to a function that expects a pointer to T2
+    without triggering a compilation error.
+
+    TBD
+
+
+3. Considering that Bool is a set of two values True and False, show that it
+   forms two (set-theoretical) monoids with respect to, respectively, operator
+   && (AND) and || (OR).
+
+                           &&                            ||
+
+IDENTITY        True  &&  _     == True       False  ||  _      == False
+                _     &&  True  == True       _      ||  False  == False
+
+                    a  &&  b  &&  c               a  ||  b  ||  c
+ASSOCIATIVITY   == (a  &&  b) &&  c           == (a  ||  b) ||  c
+                ==  a  && (b  &&  c)          ==  a  || (b  ||  c)
+
+
+4. Represent the Bool monoid with the AND operator as a category: List the
+   morphisms and their rules of composition.
+
+AND False && AND False = AND False
+AND False && AND True  = AND False
+AND True  && AND False = AND False
+AND True  && AND True  = AND True
+
+
+5. Represent addition modulo 3 as a monoid category.
+
+    TBD
+
