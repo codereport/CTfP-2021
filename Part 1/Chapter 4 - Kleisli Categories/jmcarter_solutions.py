@@ -18,21 +18,20 @@ T = TypeVar("T")
 
 class Optional(Generic[T]):
     def __init__(self, value: T = None):
-        if value is None:
-            self._valid = False
-        else:
-            self._valid = True
-
         self._value = value
 
     def is_valid(self):
-        return self._valid
+        return self._value is not None
 
-    def get_value(self):
-        return self._value if self._valid else None
+    #  could raise on None.
+    def value(self):
+        return self._value
+
+    def value_or(self, val):
+        return self._value if self._value is not None else val
 
     def __eq__(self, other: T):
-        return self._value == other.get_value() and self._valid == other.is_valid()
+        return self._value == other.value()
 
 
 def safe_root(x):
@@ -55,7 +54,7 @@ def compose_safe_functions(f1, f2):
     def composed(x):
         o1 = f1(x)
         if o1.is_valid():
-            return f2(o1.get_value())
+            return f2(o1.value())
         else:
             return Optional()
 
@@ -66,31 +65,46 @@ def compose_safe_functions(f1, f2):
 def safe_root_inverse(x):
     o1 = safe_inverse(x)
     if o1.is_valid():
-        return safe_root(o1.get_value())
+        return safe_root(o1.value())
     else:
         return o1
 
 
 def test_safe_functions():
     assert safe_root(-1).is_valid() is False
+    assert safe_root(-1).value() is None
+    assert safe_root(-1).value_or(0) == 0
     assert safe_root(100).is_valid() is True
-    assert safe_root(100).get_value() == 10
+    assert safe_root(100).value() == 10
+    assert safe_root(100).value_or(0) == 10
 
     assert safe_inverse(0).is_valid() is False
+    assert safe_inverse(0).value_or(0) == 0
     assert safe_inverse(100).is_valid() is True
-    assert safe_inverse(100).get_value() == approx(0.01)
+    assert safe_inverse(100).value() == approx(0.01)
+    assert safe_inverse(100).value_or(0) == approx(0.01)
 
     assert safe_root_inverse(-1).is_valid() is False
+    assert safe_root_inverse(-1).value() is None
+    assert safe_root_inverse(-1).value_or(0) == 0
     assert safe_root_inverse(0).is_valid() is False
+    assert safe_root_inverse(0).value() is None
+    assert safe_root_inverse(0).value_or(0) == 0
     assert safe_root_inverse(100).is_valid() is True
-    assert safe_root_inverse(100).get_value() == approx(0.1)
+    assert safe_root_inverse(100).value() == approx(0.1)
+    assert safe_root_inverse(100).value_or(0) == approx(0.1)
 
     csf = compose_safe_functions
     composed_root_inverse = csf(safe_inverse, safe_root)
     assert composed_root_inverse(-1).is_valid() is False
+    assert composed_root_inverse(-1).value() is None
+    assert composed_root_inverse(-1).value_or(0) == 0
     assert composed_root_inverse(0).is_valid() is False
+    assert composed_root_inverse(0).value() is None
+    assert composed_root_inverse(0).value_or(0) == 0
     assert composed_root_inverse(100).is_valid() is True
-    assert composed_root_inverse(100).get_value() == approx(0.1)
+    assert composed_root_inverse(100).value() == approx(0.1)
+    assert composed_root_inverse(100).value_or(0) == approx(0.1)
 
     for _ in range(10):
         val = random.randrange(-10, 10)
