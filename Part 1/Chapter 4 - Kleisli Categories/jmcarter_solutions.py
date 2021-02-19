@@ -104,8 +104,7 @@ def test_safe_functions():
     assert safe_root_inverse(100).value() == approx(0.1)
     assert safe_root_inverse(100).value_or(0) == approx(0.1)
 
-    csf = compose_safe_functions
-    composed_root_inverse = csf(safe_root, safe_inverse)
+    composed_root_inverse = compose_safe_functions(safe_root, safe_inverse)
     assert composed_root_inverse(-1).is_valid() is False
     assert composed_root_inverse(-1).value() is None
     assert composed_root_inverse(-1).value_or(0) == 0
@@ -122,9 +121,10 @@ def test_safe_functions():
 
 
 def test_multiple_safe_functions():
-    safe_square = lambda x : Optional(x*x)
-    cmsf = compose_multiple_safe_functions
+    safe_square = lambda x: Optional(x * x)
 
     # This should be equal to Identity
-    mult_composed_roundtrip = cmsf(safe_inverse, safe_square, safe_root, safe_inverse)
+    mult_composed_roundtrip = compose_multiple_safe_functions(
+        safe_inverse, safe_square, safe_root, safe_inverse
+    )
     assert mult_composed_roundtrip(12) == Optional(12)
