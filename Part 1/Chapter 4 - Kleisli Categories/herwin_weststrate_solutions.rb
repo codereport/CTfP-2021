@@ -10,6 +10,7 @@ module Optional
     # A bit of syntactic sugar, this is the default way of ruby to name
     # predicate methods (influence of Scheme)
     def value?
+      # Also: implicit returns everywhere.
       false
     end
 
@@ -41,29 +42,37 @@ module Optional
   def self.nullopt
     NullOpt.new
   end
+
+  # Ruby uses lambdas (or rather: blocks) pretty much anywhere. We can use that
+  # to move the if-guards from the call sites, so callers can be even shorter.
+  # Instead of passing the value as an argument, pass a code block that generates
+  # the value. This code block is only executed if the guard is valid.
+  # I'm not fully convinced this is a good idea, it's more meant to show an
+  # alternative.
+  def self.build(guard, &value)
+    # The `&` in front of `value` means it's a code block instead of a regular
+    # variable. We can `call` it to get its return value.
+    guard ? value(value.call) : nullopt
+  end
 end
 
 def compose(f, g)
   lambda do |n|
     res = f.call(n)
+    # We can't use the `build` method here, that would wrap the optional inside a
+    # second optional.
     res.value? ? g.call(res.value) : Optional.nullopt
   end
 end
 
 def safe_root(n)
-  if n > 0
-    Optional.value(Math.sqrt(n))
-  else
-    Optional.nullopt
-  end
+  # The `{ ...code ... }` syntax build a code block that can be executed in the
+  # called method.
+  Optional.build(n > 0) { Math.sqrt(n) }
 end
 
 def safe_reciprocal(n)
-  if n != 0
-    Optional.value(1.0 / n)
-  else
-    Optional.nullopt
-  end
+  Optional.build(n != 0) { 1.0 / n }
 end
 
 def safe_root_reciprocal(n)
