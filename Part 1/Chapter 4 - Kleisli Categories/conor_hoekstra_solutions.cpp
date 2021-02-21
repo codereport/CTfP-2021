@@ -13,3 +13,4 @@ auto safe_reciprocal(int n) -> std::optional<double> {
 // Question 3
 auto safe_root_reciprocal(int n) -> std::optional<double> {
     auto const r = safe_reciprocal(n);
+}
