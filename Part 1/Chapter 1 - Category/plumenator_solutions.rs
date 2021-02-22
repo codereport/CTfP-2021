@@ -6,15 +6,15 @@ fn id_owned<T>(thing: T) -> T {
 }
 
 #[allow(dead_code)]
-fn id_referenced<T: Clone>(thing: &T) -> T {
-    thing.clone()
+fn id_referenced<T>(thing: &T) -> &T {
+    thing
 }
 
 // 2.
 
 #[allow(dead_code)]
 fn compose<A, B, C>(f: impl Fn(B) -> C, g: impl Fn(A) -> B) -> impl Fn(A) -> C {
-    Box::new(move |x| f(g(x)))
+    move |x| f(g(x))
 }
 
 // 3.
