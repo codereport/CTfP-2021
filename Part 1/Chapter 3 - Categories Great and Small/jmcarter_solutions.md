@@ -4,7 +4,7 @@
 #### a) A graph with one node and no edges
 Simply add identity to the node
 #### b) A graph with one node and one (directed) edge (hint: this edge can be composed with itself)
-Simply add identity as well as as many arrows as needed to get identity from composition of beginning arrow with itself (could be infinite). To make is simple, assume that first arrow composed with itself is identity (morphism1^2 = Id)
+Simply add identity as well as as many arrows as needed to get identity or a cycle from composition of beginning arrow with itself (could be infinite). To make it simple, assume that first arrow composed with itself is identity (morphism1^2 = Id) or itself (morphism1^2 = morphism1).
 #### c) A graph with two nodes and a single arrow between them
 Simply add identity on each node.
 #### d) A graph with a single node and 26 arrows marked with the letters of the alphabet: a, b, c ... z.
