@@ -29,8 +29,5 @@ auto safe_root_reciprocal(int n) -> std::optional<double> {
 }
 
 auto safe_root_reciprocal2(int n) -> std::optional<double> {
-    return compose(
-        [] (auto x) { return safe_reciprocal(x); },
-        [] (auto x) { return safe_root(x); }
-    ) (n);
+    return compose(safe_reciprocal, safe_root)(n);
 }
