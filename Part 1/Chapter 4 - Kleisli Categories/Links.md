@@ -1,0 +1,23 @@
+### Links
+
+* https://www.youtube.com/channel/UCS4FAVeYW_IaZqAbqhlvxlA
+* https://www.youtube.com/c/ContextFree/videos
+* https://github.com/StylishThemes/GitHub-Dark
+* https://berlincodeofconduct.org/
+* https://twitter.com/plvirtualmeetup
+* https://hackage.haskell.org/package/base-4.14.1.0/docs/Control-Monad.html#v:-62--61--62-
+* http://hackage.haskell.org/package/base-4.11.1.0/docs/src/Control.Monad.html#%3E%3D%3E
+* http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2011r1.html
+* http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2011r1.html#prior-art-in-c-and-elsewhere
+* https://www.youtube.com/playlist?list=PLVFrD1dmDdvfVhYLU_iKkV67X9XqCJLWe
+* https://en.wikipedia.org/wiki/FP_(programming_language)
+* https://doc.rust-lang.org/rust-by-example/trait/ops.html
+* https://homepages.inf.ed.ac.uk/wadler/papers/marktoberdorf/baastad.pdf
+* https://www.youtube.com/playlist?list=PLqRUObJg9NTLwegKLg0CJikdibkVpAWq8
+* https://www.youtube.com/watch?v=Y5YCE_mVjvg&list=PLhgq-BqyZ7i7MTGhUROZy3BOICnVixETS
+* https://www.cs.cornell.edu/courses/cs3110/2019sp/textbook/ads/monad_laws.html
+* https://i.imgur.com/OdZpx.jpeg
+* https://math.ucr.edu/home/baez/rosetta.pdf#page=66
+* https://youtu.be/aLj8WCO-2QI?t=57
+* https://www.amazon.com/Simpsons-Their-Mathematical-Secrets/dp/1620402785
+* https://www.youtube.com/user/A9Videos
