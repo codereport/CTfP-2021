@@ -24,11 +24,11 @@ Therefore, since g.f = IdA and f.g = IdB, A and B with f and g form an isomorphi
      |/   \|
      A     B
 
-In a Poset, an arrow means "less than or equal". Therefore, if an object C has arrows to object A and object B, it means it is less than or equal than both A and B. To be the Product of A and B, an object C needs to be "better" than any other object D that also has arrows to both A and B, i.e. there must be an arrow from D to C (i.e, D must be less than or equal to C). So, the product of A and B in a Poset, if it exists, is the largest object that is smaller or equal than both A and B. (If equality is well defined, then it is min(A, B))
+In a Poset, an arrow means "less than or equal". Therefore, if an object C has arrows to object A and object B, it means it is less than or equal than both A and B. To be the Product of A and B, an object C needs to be "better" than any other object D that also has arrows to both A and B, i.e. there must be an arrow from D to C (i.e, D must be less than or equal to C). So, the product of A and B in a Poset, if it exists, is the largest object that is smaller or equal than both A and B. So, if A and B are connected, the product is min(A, B), otherwise it does not exist.
 
 
 ### Q3: What is the Coproduct of two objects in a POSET?
-By reversing the arrows of Question 2, it is clear that the coproduct of 2 objects in a Poset is the smallest Object that is larger than both A and B. (If equality is well defined, then it is max(A, B))
+By reversing the arrows of Question 2, it is clear that the coproduct of 2 objects in a Poset is the smallest Object that is larger than both A and B. So, if A and B are connected, the product is max(A, B), otherwise it does not exist.
 
 
 ### Q4: Implement Either as a generic type.
