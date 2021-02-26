@@ -90,7 +90,7 @@ class Partial (object):
             if isinstance(r1, Failure):
                 return r1
             self.raiseOnBadReturnType(r1)
-            r2 = other.f(r1.value)
+            r2 = other.f(r1._value)
             self.raiseOnBadReturnType(r2)
             return r2
         return Partial(g)

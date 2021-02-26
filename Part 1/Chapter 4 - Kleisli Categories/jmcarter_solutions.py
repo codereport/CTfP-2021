@@ -60,7 +60,7 @@ def compose_safe_functions(f1, f2):
     def composed(x):
         o1 = f2(x)
         if o1.is_valid():
-            return f1(o1.value())
+            return f1(o1._value())
         else:
             return Optional()
 
