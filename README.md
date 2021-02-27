@@ -10,5 +10,6 @@ This is the material (code and presentation slide decks) that correspond to the 
 ____
 
 **Supplemental Material**
+- [TheCatsters (Category Theory) YouTube Videos](https://www.youtube.com/user/TheCatsters/videos)
 - [Category Theory](https://www.amazon.ca/Category-Theory-Steve-Awodey/dp/0199237182) by Steve Awodey
 - [OPLSS Category Theory Lectures](https://youtu.be/ZKmodCApZwk) by Steve Awodey
