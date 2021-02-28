@@ -16,3 +16,10 @@ fromLeft  l ⍝ 42
 fromRight r ⍝ 1729
 fromLeft  r ⍝ Fail
 fromRight l ⍝ Fail
+
+⍝ Question 5
+
+i ← ⊢
+j ← 0∘≠
+
+m ← { isLeft ⍵: fromLeft ⍵ ⋄ 0≠fromRight ⍵ }
