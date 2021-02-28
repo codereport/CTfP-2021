@@ -12,12 +12,24 @@ TLDR:
 
 ### Question 3
 
-TODO
+[I sumit awalters as my answer](https://github.com/awalterschulze/category-theory-for-programmers-challenges/blob/master/105-Products-and-Coproducts.md#53-what-is-a-coproduct-of-two-objects-in-a-poset)
+
+TLDR: 
+
+> This means the coproduct of a poset is the largest object that is smaller or equal to both of its two constituents.
 
 ### Question 4
 
-See other file
+See [other file](https://github.com/codereport/CTfP-2021/blob/main/Part%201/Chapter%205%20-%20Products%20and%20Coproducts/conor_hoekstra_solutions.apl)
 
-### Question 5-8 
+### Question 5
 
-TODO
+See [other file](https://github.com/codereport/CTfP-2021/blob/main/Part%201/Chapter%205%20-%20Products%20and%20Coproducts/conor_hoekstra_solutions.apl)
+
+### Question 6
+
+We can have more than one function from `int` to `Either`.
+
+### Question 7
+
+You will overflow for `std::limits<int32_t>::max()` and `std::limits<int32_t>::max() - 1`.
