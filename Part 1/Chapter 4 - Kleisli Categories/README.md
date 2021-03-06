@@ -4,7 +4,7 @@ If you would like to submit your solution, simply:
 
 1. **Fork this repo**
 2. **Create / add your changes to your forked repo**
-3. **Create a pull request with your changes / solutions
+3. **Create a pull request with your changes / solutions**
 ```
 Note: For file naming or top-level folder naming, please use:
 
