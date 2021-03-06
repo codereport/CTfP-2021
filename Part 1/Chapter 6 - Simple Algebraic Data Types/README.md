@@ -1,10 +1,10 @@
-This folder contains solutions from members / attendees of the [Programming Language Virtual Meetup](https://www.meetup.com/Programming-Languages-Toronto-Meetup/) for Chapter 6: Simple Algebraic Data Types ([link to specific meeting]()).
+This folder contains solutions from members / attendees of the [Programming Language Virtual Meetup](https://www.meetup.com/Programming-Languages-Toronto-Meetup/) for Chapter 6: Simple Algebraic Data Types ([link to specific meeting](https://www.meetup.com/Programming-Languages-Toronto-Meetup/events/276648902/)).
 
 If you would like to submit your solution, simply:
 
 1. **Fork this repo**
 2. **Create / add your changes to your forked repo**
-3. **Create a pull request with your changes / solutions
+3. **Create a pull request with your changes / solutions**
 ```
 Note: For file naming or top-level folder naming, please use:
 
