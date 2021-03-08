@@ -1,4 +1,4 @@
-This folder contains solutions from members / attendees of the [Programming Language Virtual Meetup](https://www.meetup.com/Programming-Languages-Toronto-Meetup/) for Chapter 4: Kleisli Categories ([link to specific meeting](https://www.meetup.com/Programming-Languages-Toronto-Meetup/events/276348337/)).
+This folder contains solutions from members / attendees of the [Programming Language Virtual Meetup](https://www.meetup.com/Programming-Languages-Toronto-Meetup/) for Chapter 6: Simple Algebraic Data Types ([link to specific meeting](https://www.meetup.com/Programming-Languages-Toronto-Meetup/events/276648902/)).
 
 If you would like to submit your solution, simply:
 
