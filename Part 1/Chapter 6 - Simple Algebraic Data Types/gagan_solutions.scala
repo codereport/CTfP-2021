@@ -56,19 +56,19 @@ object Solution {
     * necessary updates. What code did you have to touch in Haskell vs. C++ or Java? (Even if you’re not a Haskell programmer,
     * the modifications should be pretty obvious.)
     */
-  case class square(l: Double) extends Shape
+  case class Square(l: Double) extends Shape
 
   def area2(s: Shape): Double = s match {
     case Circle(r)       => math.Pi * r * r
     case Rectangle(l, b) => l * b
-    case square(l)       => l * l
+    case Square(l)       => l * l
   }
 
   def circ2(s: Shape): Double =
     s match {
       case Circle(r)       => 2 * math.Pi * r
       case Rectangle(l, b) => 2 * (l + b)
-      case square(l)       => 4 * l
+      case Square(l)       => 4 * l
     }
 
   // had to touch pattern cases
