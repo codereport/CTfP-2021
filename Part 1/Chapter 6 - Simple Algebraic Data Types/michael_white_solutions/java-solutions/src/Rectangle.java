@@ -11,4 +11,9 @@ public class Rectangle implements Shape {
     public float area() {
         return width * height;
     }
+
+    @Override
+    public float circ() {
+        return 2 * (width + height);
+    }
 }

@@ -10,4 +10,9 @@ public class Circle implements Shape {
     public float area() {
         return PI * (radius * radius);
     }
+
+    @Override
+    public float circ() {
+        return 2 * PI * radius;
+    }
 }
