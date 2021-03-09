@@ -11,8 +11,8 @@
 * [YouTube: Erik Meijer and Gilad Bracha: Dart, Monads, Continuations, and More](https://www.youtube.com/watch?v=QNpKYypLAO8)
 * [THE EARLY HISTORY OF SMALLTALK](https://dl.acm.org/doi/pdf/10.1145/234286.1057828)
 * [YouTube: Panel: What's Next for Our Programming Languages?](https://www.youtube.com/watch?v=q3XcQh0cNZM)
-* [YouTube: What is Category Theory in mathematics? Johns Hopkins' Dr. Emily Riehl explains](https://www.youtube.com/watch?v=WLkMBMUk48E
-* https://godbolt.org/z/v35vTj)
+* [YouTube: What is Category Theory in mathematics? Johns Hopkins' Dr. Emily Riehl explains](https://www.youtube.com/watch?v=WLkMBMUk48E)
+* https://godbolt.org/z/v35vTj
 * https://web.archive.org/web/20140222124650/http://chris-taylor.github.io/blog/2013/02/10/the-algebra-of-algebraic-data-types/
 * https://web.archive.org/web/20140222144454/http://chris-taylor.github.io/blog/2013/02/11/the-algebra-of-algebraic-data-types-part-ii
 * https://web.archive.org/web/20140222183509/http://chris-taylor.github.io/blog/2013/02/13/the-algebra-of-algebraic-data-types-part-iii
