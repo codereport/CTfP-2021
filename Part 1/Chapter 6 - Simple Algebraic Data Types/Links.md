@@ -1,19 +1,18 @@
 ### Links
 
-* https://paperswelove.org/
-* https://youtu.be/ZhuHCtR3xq8
-* https://wiki.haskell.org/All_About_Monads
-* https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples
-* https://stackoverflow.com/questions/33316533/whats-the-difference-between-the-data-and-type-keywords
-* https://www.youtube.com/watch?v=xOGsS9rApD8
-* https://www.youtube.com/watch?v=fhOHn9TClXY
-* https://www.youtube.com/watch?v=YScIPA8RbVE
-* https://www.youtube.com/watch?v=fhOHn9TClXY
-* https://www.youtube.com/watch?v=QNpKYypLAO8
-* https://dl.acm.org/doi/pdf/10.1145/234286.1057828
-* https://www.youtube.com/watch?v=q3XcQh0cNZM
-* https://www.youtube.com/watch?v=WLkMBMUk48E
-* https://godbolt.org/z/v35vTj
+* [Papers We Love](https://paperswelove.org/)
+* [YouTube: Brian Beckman: Don't fear the Monad](https://youtu.be/ZhuHCtR3xq8)
+* [Haskell WikiL All About Monads](https://wiki.haskell.org/All_About_Monads)
+* [C# Tuples](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples)
+* [SO: What's the difference between the “data” and “type” keywords?](https://stackoverflow.com/questions/33316533/whats-the-difference-between-the-data-and-type-keywords)
+* [YouTube: Newtypes and strict datatypes behave differently](https://www.youtube.com/watch?v=xOGsS9rApD8)
+* [YouTube: Joe Armstrong & Alan Kay - Joe Armstrong interviews Alan Kay](https://www.youtube.com/watch?v=fhOHn9TClXY)
+* [YouTube: The Algebra of Algebraic Data Types](https://www.youtube.com/watch?v=YScIPA8RbVE)
+* [YouTube: Erik Meijer and Gilad Bracha: Dart, Monads, Continuations, and More](https://www.youtube.com/watch?v=QNpKYypLAO8)
+* [THE EARLY HISTORY OF SMALLTALK](https://dl.acm.org/doi/pdf/10.1145/234286.1057828)
+* [YouTube: Panel: What's Next for Our Programming Languages?](https://www.youtube.com/watch?v=q3XcQh0cNZM)
+* [YouTube: What is Category Theory in mathematics? Johns Hopkins' Dr. Emily Riehl explains](https://www.youtube.com/watch?v=WLkMBMUk48E
+* https://godbolt.org/z/v35vTj)
 * https://web.archive.org/web/20140222124650/http://chris-taylor.github.io/blog/2013/02/10/the-algebra-of-algebraic-data-types/
 * https://web.archive.org/web/20140222144454/http://chris-taylor.github.io/blog/2013/02/11/the-algebra-of-algebraic-data-types-part-ii
 * https://web.archive.org/web/20140222183509/http://chris-taylor.github.io/blog/2013/02/13/the-algebra-of-algebraic-data-types-part-iii
