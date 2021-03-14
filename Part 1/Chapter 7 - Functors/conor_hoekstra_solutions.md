@@ -38,3 +38,32 @@ for (auto s : { "1.23", "42.42", "17.29"}) {
     fmt::print("{}\n", string_to_int(s));   // 1     42     17
 }
 ```
+[Godbolt](https://www.godbolt.org/z/e9x5zj)
+
+More verbose with explicit types:
+```cpp
+template <typename A, typename B, typename R>
+struct reader {
+
+    using AtoB = B(A);
+    using RtoB = B(R);    
+    using RtoA = A(R);
+
+    auto fmap(RtoA f, AtoB g) {
+        return [=] (R r) { return g(f(r)); };
+    }
+
+};
+
+auto string_to_float = [](auto s) { return std::stof(s); };
+auto float_to_int    = [](auto f) { return static_cast<int>(f); };
+auto string_to_int   = 
+    reader<float, int, std::string>{}.fmap(string_to_float, float_to_int);
+
+auto string_to_int = reader_fmap(string_to_float, float_to_int);
+
+for (auto s : { "1.23", "42.42", "17.29"}) {
+    fmt::print("{}\n", string_to_float(s)); // 1.23, 42.42, 17.29
+    fmt::print("{}\n", string_to_int(s));   // 1     42     17
+}
+```
