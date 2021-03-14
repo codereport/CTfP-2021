@@ -60,7 +60,8 @@ struct reader {
 auto string_to_float = [](auto s) { return std::stof(s); };
 auto float_to_int    = [](auto f) { return static_cast<int>(f); };
 auto string_to_int   = 
-    reader<float, int, std::string>{}.fmap(string_to_float, float_to_int);
+    reader<float, int, std::string>{}
+        .fmap(string_to_float, float_to_int);
 
 auto string_to_int = reader_fmap(string_to_float, float_to_int);
 
