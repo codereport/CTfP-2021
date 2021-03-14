@@ -27,7 +27,9 @@ fmap (g . h) f = (g . f) h
 #### Question 3
 [Godbolt](https://www.godbolt.org/z/55EzWd)
 ```cpp
-auto reader_fmap = [](auto f, auto g) { return [&] (auto r) { return g(f(r)); }; };
+auto reader_fmap = [](auto f, auto g) { 
+    return [&] (auto r) { return g(f(r)); }; 
+};
 
 auto string_to_float = [](auto s) { return std::stof(s); };
 auto float_to_int    = [](auto f) { return static_cast<int>(f); };
