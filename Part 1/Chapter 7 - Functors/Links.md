@@ -1,0 +1,21 @@
+### Links
+
+* https://blog.piovezan.ca/reader_endofunctor
+* https://bitbucket.org/atlassian/fugue/src/master/fugue/src/main/java/io/atlassian/fugue/Either.java
+* https://www.youtube.com/watch?v=GqmsQeSzMdw
+* https://www.udemy.com/course/qt-6-core-beginners-with-cpp/
+* https://brevzin.github.io/c++/2020/06/18/lambda-lambda-lambda/
+* https://www.amazon.com/Algorithm-Design-Haskell-Richard-Bird/dp/1108491618
+* https://www.amazon.com/Thinking-Functionally-Haskell-Richard-Bird/dp/1107452643/
+* https://en.wikipedia.org/wiki/Forgetful_functor
+* https://www.youtube.com/watch?v=IAF8DjrQSSk
+* https://github.com/lukavdplas/pluto-notebooks/blob/master/svd.jl
+* http://math.andrej.com/2016/08/06/hask-is-not-a-category/
+* http://mail.openjdk.java.net/pipermail/lambda-dev/2013-February/008314.html
+* https://www.nytimes.com/2018/12/14/world/europe/transgender-germany-diverse.html
+* https://github.com/gfixler/pred
+* https://github.com/gfixler/pred/
+* https://www.youtube.com/channel/UCv33UlfX5S4PKxozGwUY_pA
+* http://brandon.si/code/do-applicative-functors-generalize-the-s-k-combinators/
+* https://www.youtube.com/watch?v=Ci48kqp11F8
+* https://github.com/the-little-prover/j-bob
