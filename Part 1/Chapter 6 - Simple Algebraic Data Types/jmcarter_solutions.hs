@@ -1,27 +1,16 @@
 -- Question 1
 
 maybe_to_either :: Maybe a -> Either () a
-maybe_to_either Nothing = Left ()
-maybe_to_either (Just x) = Right x
+maybe_to_either x =
+    case x of
+        Nothing -> Left ()
+        Just a -> Right a
 
 either_to_maybe :: Either () a -> Maybe a
-either_to_maybe (Left ()) = Nothing
-either_to_maybe (Right a) = Just a
-
-
-
---  Tried to do it with case analysis, but didn't load in ghci?
-
--- maybe_to_either :: Maybe a -> Either () a
--- 	case x of 
--- 		Nothing -> Left ()
--- 		Just a -> Right a
-
--- either_to_maybe :: Either () a -> Maybe a
--- either_to_maybe = x
---     case x of 
---         Left () -> Nothing
---         Right a -> Just a
+either_to_maybe x =
+    case x of
+        Left () -> Nothing
+        Right a -> Just a
 
 
 -- Questions 4. Add new shape to Hierarchy
@@ -47,7 +36,10 @@ either_to_pair :: Either a a -> (a, Bool)
 either_to_pair (Left a)  = (a, True)
 either_to_pair (Right a) = (a, False)
 
-pair_to_either :: (Bool, a) -> Either a a
+pair_to_either :: (a, Bool) -> Either a a
 pair_to_either (a, True) = Left a
 pair_to_either (a, False)  = Right a
+
+
+data Element = Element{ name :: String, symbol :: String, atomicNumber :: Int }
 
