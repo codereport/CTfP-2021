@@ -7,16 +7,16 @@ class Bifunctor:
         raise NotImplementedError
 
 
-def first(f: Callable, bf: Bifunctor):
-    return bf.bimap(f, lambda x: x)
+def bimap(f: Callable, g: Callable):
+    return lambda bf: bf.bimap(f, g)
 
 
-def second(g: Callable, bf: Bifunctor):
-    return bf.bimap(lambda x: x, g)
+def first(f: Callable):
+    return bimap(f, lambda x: x)
 
 
-def bimap(f: Callable, g: Callable, bf: Bifunctor):
-    return bf.bimap(f, g)
+def second(g: Callable):
+    return bimap(lambda x: x, g)
 
 
 class Pair(Bifunctor):
@@ -40,6 +40,6 @@ class Pair(Bifunctor):
 def test_pair_bifunctor():
     assert Pair(5, True).bimap(lambda x: x*x, lambda x: not x) == Pair(25, False)
 
-    assert first(lambda x: x*x, Pair(5, True)) == Pair(25, True)
-    assert second(lambda x: not x, Pair(5, True)) == Pair(5, False)
-    assert bimap(lambda x: str(x), lambda x: str(x), Pair(5, True)) == Pair("5", "True")
+    assert first(lambda x: x*x)(Pair(5, True)) == Pair(25, True)
+    assert second(lambda x: not x)(Pair(5, True)) == Pair(5, False)
+    assert bimap(lambda x: str(x), lambda x: str(x))(Pair(5, True)) == Pair("5", "True")
