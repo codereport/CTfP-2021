@@ -174,8 +174,7 @@ instance Bifunctor Snd where
 These implementations are identical from those in the clowns and jokers paper except that they explicitely write f and g in the functions definitions, whereas we used placeholders for disregarded parameters.
 
 
-### Q.5 Define a bifunctor in a language other than Haskell. Implement
-bimap for a generic pair in that language.
+### Q.5 Define a bifunctor in a language other than Haskell. Implement bimap for a generic pair in that language.
 
 Let's try to define it in python
 
