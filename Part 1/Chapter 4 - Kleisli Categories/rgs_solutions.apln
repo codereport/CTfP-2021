@@ -1,0 +1,25 @@
+:Namespace rgs_solutions
+
+    nullopt ← 0 ⍬
+    Val ← ⊃⌽
+    HasVal ← ⊃
+    MkOpt ← 1,⊂
+    
+    _KC_ ← {
+        r ← ⍵⍵ ⍵
+        HasVal r: ⍺⍺ Val r
+        nullopt    
+    }         
+    
+    SafeRoot ←       { 0≤⍵: MkOpt ⍵*.5 ⋄ nullopt }
+    SafeReciprocal ← { 0≠⍵: MkOpt ÷⍵   ⋄ nullopt }
+    
+    SafeRootReciprocal ← SafeRoot _KC_ SafeReciprocal
+    
+    ∇ TestDrive
+        ⎕← HasVal SafeRootReciprocal ¯2
+        ⎕← HasVal SafeRootReciprocal 0
+        ⎕← HasVal SafeRootReciprocal 2
+        ⎕← Val SafeRootReciprocal 2
+    ∇
+:EndNamespace

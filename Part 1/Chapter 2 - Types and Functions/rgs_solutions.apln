@@ -1,0 +1,9 @@
+:Namespace rgs_solutions
+
+    Same ← ⊢
+    Diff ← ~
+    True ← 1⍨
+    False ← 0⍨
+:EndNamespace
+
+
