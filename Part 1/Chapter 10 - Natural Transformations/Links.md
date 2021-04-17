@@ -1,0 +1,19 @@
+### Links
+
+* https://www.nvidia.com/en-us/gtc/
+* https://www.math3ma.com/blog/what-is-category-theory-anyway
+* https://uploads-ssl.webflow.com/5b1d427ae0c922e912eda447/5b567a0c7e0e9823d4098013_letrois.jpg
+* https://tinyurl.com/c225zp79
+* https://proofwiki.org/wiki/Definition:Natural_Transformation
+* https://stackoverflow.com/a/34732721
+* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWODuhvj_h9uZnLYnBqWIIAfUp-4D5TDLyUpIKfNS4N5ajg9qUzw
+* https://youtu.be/K0k1RAxyzao?t=2311
+* https://github.com/fantasyland/fantasy-birds
+* https://discord.com/channels/709586477964853259/803617704249786429/827688054277931008
+* https://www.meetup.com/LispNYC/events/vqhmbpyccgbrb/
+* https://youtu.be/IE55GgrjzLY
+* https://www.meetup.com/Tucson-Functional-Programmers/
+* https://www.meetup.com/Tucson-Functional-Programmers/events/mdxcvryccgbsb/
+* https://www.meetup.com/Atlanta-Functional-Programming-Meetup
+* https://www.meetup.com/The-Chicago-Philosophy-Meetup/events/277496511/
+* https://youtu.be/GZuZgCDql6g

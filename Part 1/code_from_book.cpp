@@ -41,3 +41,12 @@ using namespace std::ranges;
 auto fact(int n) -> int {
     return views::iota(1, n) | fold(1, std::multiplies{});
 }
+
+// Chapter 9: Function Types
+
+// https://www.godbolt.org/z/vj65KWdGx
+auto sort_array_by_parity(auto& A) {
+    std::ranges::partition(A, 
+        [](auto e) { return e % 2 == 0; });   
+    return A;
+}
