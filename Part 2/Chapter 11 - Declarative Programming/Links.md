@@ -1,3 +1,23 @@
 ### Links
 
-* TBA
+* https://adspthepodcast.com/2021/04/16/Episode-21.html
+* https://en.cppreference.com/w/cpp/experimental/parallelism/existing
+* https://www.merriam-webster.com/dictionary/sift
+* https://en.wikipedia.org/wiki/Functional_reactive_programming
+* https://elm-lang.org/news/farewell-to-frp
+* https://www.youtube.com/watch?v=j3Q32brCUAI
+* https://www.youtube.com/watch?v=bmKYiUOEo2A
+* https://www.youtube.com/watch?v=b04t8lsxMKQ
+* https://elixir-lang.org/crash-course.html
+* https://github.com/llaisdy/beam_languages
+* https://www.meetup.com/Atlanta-Functional-Programming-Meetup/
+* https://github.com/codereport/Programming-Language-Meetups
+* https://www.nvidia.com/en-us/gtc/
+* https://youtu.be/giWCdQ7fnQU
+* https://youtu.be/ta3S8CRN2TM
+* https://youtu.be/x9mIAT-CAwA?t=683
+* http://math.mit.edu/~dspivak/
+* https://www.meetup.com/london-star-wars-meetup/
+* https://www.youtube.com/watch?v=5BBhNkywMJY
+* https://www.youtube.com/watch?v=LjFM8vw3pbU&t=1s
+* https://youtu.be/HgtRAbE1nBM
