@@ -6,13 +6,14 @@ Say `f: A -> A'` is a monoid isomorphishm. Then there exists some `g: A' -> A` s
 
 ### Question 2
 
-**What is the image of the empty list `[]`?** 
+**What is the image of the empty list `[]`?** <br>
 1
 
-**Is `[3]` mapped to 3**
+**Is `[3]` mapped to 3?** <br>
 Yes
 
-**What is the image of `[1, 2, 3, 4]`?** 24
+**What is the image of `[1, 2, 3, 4]`?** <br>
+24
 
 **How many different lists map to 12?**
 ```hs
