@@ -43,26 +43,26 @@ type PairAlpha<'a, 't> = ('a -> 't) -> 't Pair
 type PairBeta<'a, 't> = 't Pair -> ('a -> 't)
 
 type Side =
-    | Lhs
-    | Rhs
+    | Lt
+    | Rt
 
 let rec pairTabulate<'a> : PairAlpha<Side, 'a> = 
-    fun f -> Pair (f Lhs, f Rhs)
+    fun f -> Pair (f Lt, f Rt)
 
 let rec pairIx<'a> : PairBeta<Side, 'a> =
     fun p s -> 
         match (p, s) with
-        | Pair (l, _), Lhs -> l
-        | Pair (_, r), Rhs -> r
+        | Pair (l, _), Lt -> l
+        | Pair (_, r), Rt -> r
 
 let memoPair = 
     pairTabulate (
         function
-        | Lhs -> "left"
-        | Rhs -> "right" )
+        | Lt -> "left"
+        | Rt -> "right" )
     
-printfn "  %s" ((memoPair |> pairIx) Lhs)
-printfn "  %s" ((memoPair |> pairIx) Rhs)
+printfn "  %s" ((memoPair |> pairIx) Lt)
+printfn "  %s" ((memoPair |> pairIx) Rt)
 
 // Output:
 //   left
