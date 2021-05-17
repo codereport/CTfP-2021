@@ -32,7 +32,7 @@ let memoSqare = streamTabulate (fun x -> x * x)
 /// Question 6: The functor `Pair a = Pair a a` is representable. Can you guess the type that
 /// represents it? Implement `tabulate` and `index`.
 ///
-printfn "CTfP - Chapter 14 - Question 4"
+printfn "CTfP - Chapter 14 - Question 6"
 
 // It seems that the represeting type for `Pair a a` is `Bool`, or - equivalently - any type of
 // cardinality 2.
