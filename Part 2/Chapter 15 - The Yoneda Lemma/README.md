@@ -1,4 +1,4 @@
-This folder contains solutions from members / attendees of the [Programming Language Virtual Meetup](https://www.meetup.com/Programming-Languages-Toronto-Meetup/) for Chapter 16: The Yoneda Embedding ([link to specific meeting](https://www.meetup.com/Programming-Languages-Toronto-Meetup/events/278666096)).
+This folder contains solutions from members / attendees of the [Programming Language Virtual Meetup](https://www.meetup.com/Programming-Languages-Toronto-Meetup/) for Chapter 15: The Yoneda Lemma ([link to specific meeting](https://www.meetup.com/Programming-Languages-Toronto-Meetup/events/278329934/).
 
 If you would like to submit your solution, simply:
 
