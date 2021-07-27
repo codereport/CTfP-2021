@@ -1,0 +1,22 @@
+3. Complete the proof of equivalence of the two definitions of the adjunction.
+
+To show that the two definitions are equivalent, we must show that given two functors L : D -> C and R : C -> D
+
+1. the existence of the following natural transformations
+
+η :: ID -> R ∘ L
+ε :: L ∘ R -> IC
+
+implies that C(L d, c) ≅ D(d, R c), and
+
+2. if C(L d, c) ≅ D(d, R c), this implies the existence of η and ε (as defined above).
+
+
+
+The derivation of the unit from the isomorphism of hom-sets is given in the text. The derivation of the counit from the isomorphism of hom-sets is exercise two.
+
+The mapping of an arbitrary morphism f in the hom-set C(L d, c) to an element of the hom-set D(d, R c) is given in the text.
+
+To complete the proof, we need only to provide a mapping of an arbitrary morphism g in D(d, R c) to an element of C(L d, c). This mapping is given by ε_c∘(L g).
+
+
