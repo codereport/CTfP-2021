@@ -1,0 +1,16 @@
+2. Derive the counit ε starting from the hom-sets isomorphism in the second definition of the adjunction.
+
+We are given that C(L d, c) ≅ D(d, R c). Since this holds for all d, set d equal to R c, so C(L (R c), c) ≅ D(R c, R c). We know that the right side contains at least id_(R c), so is nonempty.
+We therefore have a family of morphisms in C(L (R c), c), which we can rewrite as C((L ∘ R) c, Id_C c), where Id_C is the identity functor on C. Picking arbitrary c and c' from C, and calling an
+arbitrary morphism in C((L ∘ R) c, c) ε_c, we have the following diagram:
+
+     ε_c
+c  <----- (L ∘ R) c
+|           |
+| f         | (L ∘ R) f
+V           V
+c' <----- (L ∘ R) c'
+     ε_c'
+
+
+which, provided a morphism f: c -> c' exists, commutes.
