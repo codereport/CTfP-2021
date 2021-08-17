@@ -1,0 +1,21 @@
+### Links
+
+* https://homepages.inf.ed.ac.uk/wadler/papers/marktoberdorf/baastad.pdf
+* https://stackoverflow.com/questions/4697320/monads-as-adjunctions
+* http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0798r4.html
+* https://youtu.be/GC4cp4U2f2E
+* http://learnyouahaskell.com/higher-order-functions
+* https://hackage.haskell.org/package/base-4.15.0.0/docs/Control-Monad.html#v:-62--61--62-
+* https://media.discordapp.net/attachments/803617704249786429/832633264140451870/monad_4.
+* https://www.youtube.com/watch?v=ZhuHCtR3xq8
+* https://stackoverflow.com/questions/4697320/monads-as-adjunctions
+* http://elementsofprogramming.com/
+* https://www.amazon.ca/Mathematics-Generic-Programming-Alexander-Stepanov/dp/0321942043
+* https://www.youtube.com/playlist?list=PLHxtyCq_WDLV5N5zUCBCDC2WqF1VBDGg1
+* https://www.youtube.com/watch?v=GmgoPd7VQ9Q&list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_&* 
+* https://common-lisp.net/project/boston-lisp/
+* https://www.meetup.com/Meeting-Cpp-online/events/279736600
+* https://opendylan.org/
+* https://www.meetup.com/LispNYC/events/275049987
+* https://www.youtube.com/watch?v=094y1Z2wpJg
+* https://www.youtube.com/watch?v=OVWjVQ8mtZ8
