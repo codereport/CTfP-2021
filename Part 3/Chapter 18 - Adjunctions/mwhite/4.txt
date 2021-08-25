@@ -1,0 +1,11 @@
+Recall that the factorizer for the coproduct is defined (in Haskell) as:
+
+factorizer :: (a -> c) -> (b -> c) -> Either a b -> c
+factorizer i j (Left a)  = i a
+factorizer i j (Right b) = j b
+
+If we take <i, j> as a morphism in C×C from <a,b> -> <c,c>, then the factorizer gives us a mapping from <i, j> to m : (a+b) -> c in C.
+
+Since a+b is a coproduct, we know that we can write i and j in terms of m and i': a -> a+b, j': b -> a+b, specifically, as i=m∘i' and j=m∘j'.
+
+To complete this proof, we likely need some kind of proof of naturality, but I have run out of time.

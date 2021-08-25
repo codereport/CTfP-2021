@@ -1,4 +1,4 @@
-This folder contains solutions from members / attendees of the [Programming Language Virtual Meetup](https://www.meetup.com/Programming-Languages-Toronto-Meetup/) for Chapter 12: Limits and Colimits ([link to specific meeting](https://www.meetup.com/Programming-Languages-Toronto-Meetup/events/277656044/)).
+This folder contains solutions from members / attendees of the [Programming Language Virtual Meetup](https://www.meetup.com/Programming-Languages-Toronto-Meetup/) for Chapter 18: Adjunctions ([link to specific meeting](https://www.meetup.com/Programming-Languages-Toronto-Meetup/events/279430881/)).
 
 If you would like to submit your solution, simply:
 

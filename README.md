@@ -7,6 +7,7 @@ This is the material (code and presentation slide decks) that correspond to the 
 - **Lectures:** 
    - [Category Theory (Part I)](https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_)
    - [Category Theory (Part II)](https://www.youtube.com/playlist?list=PLbgaMIhjbmElia1eCEZNvsVscFef9m0dm)
+   - [Category Theory (Part III)](https://www.youtube.com/playlist?list=PLbgaMIhjbmEn64WVX4B08B4h2rOtueWIL)
 - **Meetup Precordings:** [YouTube Playlist](https://www.youtube.com/playlist?list=PLVFrD1dmDdvcjCQDPhExqP56jqxp0Ssn_)
 
 ____

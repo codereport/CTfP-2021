@@ -1,0 +1,18 @@
+1. Derive the naturality square for ψ, the transformation between the two (contravariant) functors:
+
+  a -> C(L a, b)
+  a -> D(a, R b)
+
+
+
+
+                                                          C(f, b)
+                         C(L a, b)  <-------------------------------------------------  C(L a', b)
+                          |   ^                                                           |   ^
+                          |   |                                                           |   |
+                          |   |                               D((R ∘ L) a', R b) ∘ η_a'   |   |  ε_b ∘ C(L a', (L ∘ R) B)
+D((R ∘ L) a, R b) ∘ η_a   |   |  ε_b ∘ C(L a, (L ∘ R) B)                                  |   |
+                          |   |                                                           |   |
+                          V   |                                                           V   |
+                         D(a, R b)  <-------------------------------------------------  D(a', R b)
+                                                          D(f, R b)
