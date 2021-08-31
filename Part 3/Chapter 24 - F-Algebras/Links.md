@@ -9,3 +9,4 @@
 * https://namingmyfunction.vercel.app
 * https://www.youtube.com/watch?v=DJyhWAwmGqE&ab_channel=ScalaWorld
 * http://elementsofprogramming.com/eop.pdf#page=81
+* https://youtu.be/inH26ggKJfc
