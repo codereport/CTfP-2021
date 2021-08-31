@@ -1,4 +1,4 @@
-This folder contains solutions from members / attendees of the [Programming Language Virtual Meetup](https://www.meetup.com/Programming-Languages-Toronto-Meetup/) for Chapter 24: Algebras for Monads ([link to specific meeting](https://www.meetup.com/Programming-Languages-Toronto-Meetup/events/280308252)).
+This folder contains solutions from members / attendees of the [Programming Language Virtual Meetup](https://www.meetup.com/Programming-Languages-Toronto-Meetup/) for Chapter 24: F-Algebras ([link to specific meeting](https://www.meetup.com/Programming-Languages-Toronto-Meetup/events/280308252)).
 
 If you would like to submit your solution, simply:
 
