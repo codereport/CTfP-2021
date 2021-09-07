@@ -1,0 +1,19 @@
+1. What is the action of the free functor F :: C -> C^T on morphisms? Hint: use the naturality condition for monadic μ.
+
+For all c∈C, the free functor F^T maps c to (T c, μ_c). A morphism f :: a -> b must be mapped to a morphism from (T a, μ_a) to (T b, μ_b) such that the following diagram commutes:
+
+https://q.uiver.app/?q=WzAsNixbMCwzLCJUYSJdLFs0LDMsIlRiIl0sWzAsNiwiYSJdLFs0LDYsImIiXSxbMCwwLCJUXjJhIl0sWzQsMCwiVF4yIGIiXSxbMCwxLCJUZiIsMl0sWzAsMiwiZyJdLFsxLDMsImgiXSxbMiwzLCJmIiwyXSxbNCwwLCJcXG11X2EiLDJdLFs1LDEsIlxcbXVfYiJdLFs0LDUsIlReMiBmIl1d
+
+2. Define the adjunction: U^W ⊣ F^W.
+
+See the following diagram:
+
+https://q.uiver.app/?q=WzAsMTUsWzgsMSwiKGEsIGYpIl0sWzgsNSwiKFdiLCBcXGRlbHRhX2IpIl0sWzExLDAsImYgOjogYSBcXHJpZ2h0YXJyb3cgVyBhIl0sWzYsMywiKFdhLCBcXGRlbHRhX2EpID0gKEZeVyBcXGNpcmMgVV5XKShhLGYpIl0sWzAsMSwiYSJdLFswLDUsImIiXSxbMiwzLCJXYiA9IChVXldcXGNpcmMgRl5XKWIiXSxbMTMsNF0sWzE2LDJdLFsxMyw3LCJhIl0sWzEzLDUsIldhIl0sWzEzLDMsIldeMmEiXSxbOSw4XSxbMTEsMSwiV2Y6OiBXYSAgXFxyaWdodGFycm93IFdeMmEgPSBcXGRlbHRhX2EiXSxbMyw0XSxbMCwxLCJcXGthcHBhIl0sWzAsMywiXFxldGE9KGYoeCksIFdmKVxcZm9yYWxsIHhcXGluIEMiLDJdLFswLDQsIlVeVyIsMix7ImN1cnZlIjo1LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbNSwxLCJGXlciLDIseyJjdXJ2ZSI6NSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzYsNSwiXFxlcHNpbG9uX2IiLDJdLFs0LDUsIlxcaW90YSIsMl0sWzQsNiwiVV5XIFxca2FwcGEiLDJdLFszLDEsIkZeVyBcXGlvdGEiLDJdLFs5LDEwLCJmIiwyXSxbMTAsMTEsIldmIiwyLHsiY3VydmUiOi0zfV0sWzEwLDExLCJcXGRlbHRhX2EiLDIseyJjdXJ2ZSI6M31dXQ==
+
+3. Prove that the above adjunction reproduces the original comonad.
+
+We need to show that (U^W ∘ F^W) = W -- that is, that we can recover the comonad's ε and δ from the adjunction.
+
+For the comonad's ε, we use the adjunctions counit (which we took to be the comonad's ε).
+
+For the comonad's δ, we take U^W (η (F^W (Wa))), where η(a, f) = (f(a), Wf).
