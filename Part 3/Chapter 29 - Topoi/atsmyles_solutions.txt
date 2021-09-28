@@ -1,0 +1,21 @@
+Question 1: Show that the function 𝑓 that is the pullback of 𝑡𝑟𝑢𝑒 along the
+characteristic function must be injective.
+
+
+Let's start with the simplest example
+
+Set A has elements {1,2}
+Set A' has elements {3}
+Set B has one element {b}
+
+Function f maps from Set A to Set B (both elements point to the single element in B (surjective function))
+Function f' maps from Set A' to Set B (injective function)
+
+Assuming above then there can be no isomorphism between f and f' breaking the composition 
+
+h:: a->a' such that f=f' . h 
+
+
+
+
+
