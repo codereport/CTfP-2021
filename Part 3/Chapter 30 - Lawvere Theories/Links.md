@@ -1,0 +1,21 @@
+### Links 
+
+* https://www.youtube.com/watch?v=UogkQ67d0nY
+* https://www.youtube.com/watch?v=iPVoCTgvi8M
+* https://bartoszmilewski.com/2017/02/06/applicative-functors/
+* https://kseo.github.io/posts/2016-12-24-reader-monad-and-ski-combinators.html
+* http://brandon.si/code/do-applicative-functors-generalize-the-s-k-combinators/
+* https://stackoverflow.com/questions/35013293/what-is-applicative-functor-definition-from-the-category-theory-pov
+* http://learnyouahaskell.com/functors-applicative-functors-and-monoids#applicative-functors
+* https://en.wikipedia.org/wiki/Peano_axioms#:~:text=The%20Peano%20axioms%20define%20the,0%20is%20a%20natural%20number
+* https://ncatlab.org/nlab/show/Lawvere+theory
+* https://youtu.be/6t6bsWVOIzs
+* https://funprog.srid.ca/category-theory/computability.html
+* http://www2.math.umd.edu/~jcohen/402/Pinter%20Algebra.pdf
+* https://www.amazon.ca/Abstract-Algebra-Introduction-Thomas-Hungerford/dp/1111569622
+* https://math.stackexchange.xn--com/questions/522921/the-ring--n-is-a-field-if-and-only-if-n-is-prime-4r19bca
+* https://proofwiki.org/wiki/Ring_of_Integers_Modulo_Prime_is_Field
+* https://www.arraycast.com/episodes/episode10-eric-iverson
+* http://strictlypositive.org/IdiomLite.pdf
+* https://youtu.be/1qwlVhYDyT0?t=464
+* https://www.youtube.com/watch?v=6BnVo7EHO_8
