@@ -1,0 +1,53 @@
+1. Derive unit and associativity laws for the tensor product defined as composition of endo-1-cells in a bicategory.
+	 unit laws:
+	 f * id(a) -> f
+    id(b) * f -> f
+	 id(b) * f * id(a) -> f
+	 
+	 associativity
+
+	 (g * id(b)) * f = g * (id(b) * f) is isomorphic to g * f
+
+2. Check that monad laws for a monad in 𝐒𝐩𝐚𝐧 correspond to identity and associativity laws in the resulting category.
+
+	 Monad laws:
+		  return :: a -> M(a)
+		  Kleisli operator :: (a -> m(b)) -> (b -> m(c)) -> (a -> m(c))
+		  bind :: m(a) -> (a -> m(b)) -> m(b)
+
+	 Span Laws:
+	    id :: a -> S(a,a)
+	    associativity :: S(a,b) -> S(b,c) -> S(a,c)
+
+		  id and return are trivially identical. Let's first re-write Kleisli operator in terms of spans
+		  Kleisli operator :: (a -> S(a,b)) -> (b -> S(b,c)) -> (a -> S(a,c))
+
+		  now substitute id(a) and id(b) for a and b
+	 
+		  (S(a,a) -> S(a,b)) -> (S(b,b) -> S(b,c)) -> (S(a,a) -> S(a,c))
+
+		  Now lets suppose we have these 2 functions
+				f :: a->b
+            g :: b->c
+
+		  We can express them as spans using the unit law id(b) * f * id(a) which is to say that f is a span from a to b
+
+		     f -> S(a,b)
+		     g -> S(b,c)
+
+		  For clarity I will replace all the span notation above with (a,b,f,g)
+
+		  (a -> f) -> (b -> g) -> (a -> f * g) aka (a->c) or in span notation S(a,c)
+
+		  Which is to say if I can apply a to f and b to g then I can apply a to f * g. f * g gives use c so the end result is the associativity law for spans
+	 
+		   f -> g -> f * g = S(a,b) -> S(b,c) -> S(a,c)
+
+	 
+
+3. Show that a monad in 𝐏𝐫𝐨𝐟 is an identity-on-objects functor.
+	 *** This question intentionally left blank ***
+
+4. What’s a monad algebra for a monad in 𝐒𝐩𝐚𝐧?
+	 Replace T(x) with S(x,x) and you have a T algebra for Spans.
+
