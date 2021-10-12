@@ -1,12 +1,12 @@
 1. Derive unit and associativity laws for the tensor product defined as composition of endo-1-cells in a bicategory.
 	 unit laws:
-	 f * id(a) -> f
-    id(b) * f -> f
-	 id(b) * f * id(a) -> f
+	 f ∘ id(a) -> f
+    id(b) ∘ f -> f
+	 id(b) ∘ f ∘ id(a) -> f
 	 
 	 associativity
 
-	 (g * id(b)) * f = g * (id(b) * f) is isomorphic to g * f
+	 (g ∘ id(b)) ∘ f = g ∘ (id(b) ∘ f) is isomorphic to g ∘ f
 
 2. Check that monad laws for a monad in 𝐒𝐩𝐚𝐧 correspond to identity and associativity laws in the resulting category.
 
