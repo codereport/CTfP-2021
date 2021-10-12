@@ -30,18 +30,18 @@
 				f :: a->b
             g :: b->c
 
-		  We can express them as spans using the unit law id(b) * f * id(a) which is to say that f is a span from a to b
+		  We can express them as spans using the unit law id(b) ∘ f ∘ id(a) which is to say that f is a span from a to b
 
 		     f -> S(a,b)
 		     g -> S(b,c)
 
 		  For clarity I will replace all the span notation above with (a,b,f,g)
 
-		  (a -> f) -> (b -> g) -> (a -> f * g) aka (a->c) or in span notation S(a,c)
+		  (a -> f) -> (b -> g) -> (a -> f ∘ g) aka (a->c) or in span notation S(a,c)
 
-		  Which is to say if I can apply a to f and b to g then I can apply a to f * g. f * g gives use c so the end result is the associativity law for spans
+		  Which is to say if I can apply a to f and b to g then I can apply a to f ∘ g. f ∘ g gives use c so the end result is the associativity law for spans
 	 
-		   f -> g -> f * g = S(a,b) -> S(b,c) -> S(a,c)
+		   f -> g -> f ∘ g = S(a,b) -> S(b,c) -> S(a,c)
 
 	 
 
